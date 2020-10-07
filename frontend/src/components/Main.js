@@ -21,7 +21,7 @@ const Main = ({ setBody, playerCount, setPlayerCount }) => {
 
   return (
     <div className='Container'>
-      <h1 className='Heading'>Player card selection</h1>
+      <h2>Player card selection</h2>
       <div className='Playercount-flex'>
         <h2>Players: {playerCount}</h2>
         <div>

@@ -21,7 +21,7 @@ import darkjudas from '../resources/darkjudas.png'
 import guppy from '../resources/guppy.png'
 import whoreofbabylon from '../resources/whoreofbabylon.png'
 
-const Expansion = ({ playerCount }) => {
+const Expansion = ({ setBody, playerCount }) => {
 
   const [playerCard, setPlayerCard] = useState(-1)
   const [alreadySelected, setAlreadySelected] = useState([])
@@ -41,6 +41,11 @@ const Expansion = ({ playerCount }) => {
         newNumberFound = true
       }
     }
+  }
+
+  const handleRoundEnd = () => {
+    setBody('main')
+    window.location.reload()
   }
 
   return (
@@ -66,7 +71,7 @@ const Expansion = ({ playerCount }) => {
       {playerCard === 17 && <img className='Player-Card' src={guppy} alt='Guppy' />}
       {playerCard === 18 && <img className='Player-Card' src={whoreofbabylon} alt='Whore of Babylon' />}
       {alreadySelected.length < playerCount && <Button type='Button-rng' text='RNG' handleClick={() => handleRNG()} />}
-      {alreadySelected.length === playerCount && <Button type='Button-rng' text='New Round' handleClick={() => window.location.reload()} />}
+      {alreadySelected.length === playerCount && <Button type='Button-rng' text='Main Screen' handleClick={() => handleRoundEnd()} />}
     </div>
   )
 }

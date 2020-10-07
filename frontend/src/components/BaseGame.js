@@ -13,7 +13,7 @@ import maggy from '../resources/maggy.png'
 import samson from '../resources/samson.png'
 import theforgotten from '../resources/theforgotten.png'
 
-const BaseGame = ({ playerCount }) => {
+const BaseGame = ({ setBody, playerCount }) => {
 
   const [playerCard, setPlayerCard] = useState(-1)
   const [alreadySelected, setAlreadySelected] = useState([])
@@ -35,6 +35,11 @@ const BaseGame = ({ playerCount }) => {
     }
   }
 
+  const handleRoundEnd = () => {
+    setBody('main')
+    window.location.reload()
+  }
+
   return (
     <div className='Container'>
       <img className='Edition-selection-img' src={baseGame} alt='Base Game' />
@@ -50,7 +55,7 @@ const BaseGame = ({ playerCount }) => {
       {playerCard === 9 && <img className='Player-Card' src={samson} alt='Samson' />}
       {playerCard === 10 && <img className='Player-Card' src={theforgotten} alt='The Forgotten' />}
       {alreadySelected.length < playerCount && <Button type='Button-rng' text='RNG' handleClick={() => handleRNG()} />}
-      {alreadySelected.length === playerCount && <Button type='Button-rng' text='New Round' handleClick={() => window.location.reload()} />}
+      {alreadySelected.length === playerCount && <Button type='Button-rng' text='Main Screen' handleClick={() => handleRoundEnd()} />}
     </div>
   )
 }

@@ -21,11 +21,11 @@ const App = () => {
 
   views['main'] = <Main setBody={setView} playerCount={playerCount} setPlayerCount={setPlayerCount} />
 
-  views['baseGame'] = <BaseGame playerCount={playerCount} />
+  views['baseGame'] = <BaseGame setBody={setView} playerCount={playerCount} />
 
-  views['goldBoxEdition'] = <GoldBoxEdition playerCount={playerCount} />
+  views['goldBoxEdition'] = <GoldBoxEdition setBody={setView} playerCount={playerCount} />
 
-  views['expansion'] = <Expansion playerCount={playerCount} />
+  views['expansion'] = <Expansion setBody={setView} playerCount={playerCount} />
 
   return (
     <div className="App">
