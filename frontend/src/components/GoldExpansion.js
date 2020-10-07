@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Button from './Button'
-import baseGame from '../resources/basegame.png'
+import goldExpansion from '../resources/goldexpansion.png'
 import bluebaby from '../resources/bluebaby.png'
 import cain from '../resources/cain.png'
 import eden from '../resources/eden.png'
@@ -12,8 +12,16 @@ import lilith from '../resources/lilith.png'
 import maggy from '../resources/maggy.png'
 import samson from '../resources/samson.png'
 import theforgotten from '../resources/theforgotten.png'
+import apollyon from '../resources/apollyon.png'
+import azazel from '../resources/azazel.png'
+import thekeeper from '../resources/thekeeper.png'
+import thelost from '../resources/thelost.png'
+import bumbo from '../resources/bumbo.png'
+import darkjudas from '../resources/darkjudas.png'
+import guppy from '../resources/guppy.png'
+import whoreofbabylon from '../resources/whoreofbabylon.png'
 
-const BaseGame = ({ setBody, playerCount }) => {
+const GoldExpansion = ({ setBody, playerCount }) => {
 
   const [playerCard, setPlayerCard] = useState(-1)
   const [alreadySelected, setAlreadySelected] = useState([])
@@ -23,7 +31,7 @@ const BaseGame = ({ setBody, playerCount }) => {
 
     let newNumberFound = false
     while (newNumberFound === false) {
-      let card = Math.floor(Math.random() * 10)
+      let card = Math.floor(Math.random() * 18)
       if (!alreadySelected.includes(card)) {
         setPlayerCard(card)
         let newArray = alreadySelected
@@ -42,7 +50,7 @@ const BaseGame = ({ setBody, playerCount }) => {
 
   return (
     <div className='Container'>
-      <img className='Edition-selection-img-heading' src={baseGame} alt='Base Game' />
+      <img className='Edition-selection-img-heading' src={goldExpansion} alt='Gold & Expansion' />
       {playerCard === 0 && <img className='Player-Card' src={bluebaby} alt='Blue Baby' />}
       {playerCard === 1 && <img className='Player-Card' src={cain} alt='Cain' />}
       {playerCard === 2 && <img className='Player-Card' src={eden} alt='Eden' />}
@@ -54,10 +62,18 @@ const BaseGame = ({ setBody, playerCount }) => {
       {playerCard === 8 && <img className='Player-Card' src={maggy} alt='Maggy' />}
       {playerCard === 9 && <img className='Player-Card' src={samson} alt='Samson' />}
       {playerCard === 10 && <img className='Player-Card' src={theforgotten} alt='The Forgotten' />}
+      {playerCard === 11 && <img className='Player-Card' src={apollyon} alt='Apollyon' />}
+      {playerCard === 12 && <img className='Player-Card' src={azazel} alt='Azazel' />}
+      {playerCard === 13 && <img className='Player-Card' src={thekeeper} alt='The Keeper' />}
+      {playerCard === 14 && <img className='Player-Card' src={thelost} alt='The Lost' />}
+      {playerCard === 15 && <img className='Player-Card' src={bumbo} alt='Bum-Bo' />}
+      {playerCard === 16 && <img className='Player-Card' src={darkjudas} alt='Dark Judas' />}
+      {playerCard === 17 && <img className='Player-Card' src={guppy} alt='Guppy' />}
+      {playerCard === 18 && <img className='Player-Card' src={whoreofbabylon} alt='Whore of Babylon' />}
       {alreadySelected.length < playerCount && <Button type='Button-rng' text='RNG' handleClick={() => handleRNG()} />}
       {alreadySelected.length === playerCount && <Button type='Button-rng' text='Main Screen' handleClick={() => handleRoundEnd()} />}
     </div>
   )
 }
 
-export default BaseGame
+export default GoldExpansion

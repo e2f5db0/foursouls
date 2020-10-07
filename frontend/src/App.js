@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
 import './App.css'
 import { Switch, Route, useHistory } from 'react-router-dom'
+import BaseGame from './components/BaseGame'
+import BaseExpansion from './components/BaseExpansion'
 import GoldBoxEdition from './components/GoldBoxEdition'
+import GoldExpansion from './components/GoldExpansion'
 import Navbar from './components/Navbar'
 import Main from './components/Main'
-import Expansion from './components/Expansion'
-import BaseGame from './components/BaseGame'
 
 const App = () => {
 
@@ -23,9 +24,11 @@ const App = () => {
 
   views['baseGame'] = <BaseGame setBody={setView} playerCount={playerCount} />
 
+  views['baseExpansion'] = <BaseExpansion setBody={setView} playerCount={playerCount} />
+
   views['goldBoxEdition'] = <GoldBoxEdition setBody={setView} playerCount={playerCount} />
 
-  views['expansion'] = <Expansion setBody={setView} playerCount={playerCount} />
+  views['goldExpansion'] = <GoldExpansion setBody={setView} playerCount={playerCount} />
 
   return (
     <div className="App">
@@ -43,12 +46,16 @@ const App = () => {
           {views['baseGame']}
         </Route>
 
+        <Route exact path='/baseExpansion'>
+          {views['baseExpansion']}
+        </Route>
+
         <Route exact path='/goldBoxEdition'>
           {views['goldBoxEdition']}
         </Route>
 
-        <Route exact path='/expansion'>
-          {views['expansion']}
+        <Route exact path='/goldExpansion'>
+          {views['goldExpansion']}
         </Route>
       </Switch>
     </div>

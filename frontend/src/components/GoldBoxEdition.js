@@ -16,10 +16,6 @@ import apollyon from '../resources/apollyon.png'
 import azazel from '../resources/azazel.png'
 import thekeeper from '../resources/thekeeper.png'
 import thelost from '../resources/thelost.png'
-import bumbo from '../resources/bumbo.png'
-import darkjudas from '../resources/darkjudas.png'
-import guppy from '../resources/guppy.png'
-import whoreofbabylon from '../resources/whoreofbabylon.png'
 
 const GoldBoxEdition = ({ setBody, playerCount }) => {
 
@@ -31,7 +27,7 @@ const GoldBoxEdition = ({ setBody, playerCount }) => {
 
     let newNumberFound = false
     while (newNumberFound === false) {
-      let card = Math.floor(Math.random() * 19)
+      let card = Math.floor(Math.random() * 14)
       if (!alreadySelected.includes(card)) {
         setPlayerCard(card)
         let newArray = alreadySelected
@@ -50,7 +46,7 @@ const GoldBoxEdition = ({ setBody, playerCount }) => {
 
   return (
     <div className='Container'>
-      <img className='Edition-selection-img' src={goldBoxEdition} alt='Gold Box Edition' />
+      <img className='Edition-selection-img-heading' src={goldBoxEdition} alt='Gold Box Edition' />
       {playerCard === 0 && <img className='Player-Card' src={bluebaby} alt='Blue Baby' />}
       {playerCard === 1 && <img className='Player-Card' src={cain} alt='Cain' />}
       {playerCard === 2 && <img className='Player-Card' src={eden} alt='Eden' />}
@@ -66,10 +62,6 @@ const GoldBoxEdition = ({ setBody, playerCount }) => {
       {playerCard === 12 && <img className='Player-Card' src={azazel} alt='Azazel' />}
       {playerCard === 13 && <img className='Player-Card' src={thekeeper} alt='The Keeper' />}
       {playerCard === 14 && <img className='Player-Card' src={thelost} alt='The Lost' />}
-      {playerCard === 15 && <img className='Player-Card' src={bumbo} alt='Bum-Bo' />}
-      {playerCard === 16 && <img className='Player-Card' src={darkjudas} alt='Dark Judas' />}
-      {playerCard === 17 && <img className='Player-Card' src={guppy} alt='Guppy' />}
-      {playerCard === 18 && <img className='Player-Card' src={whoreofbabylon} alt='Whore of Babylon' />}
       {alreadySelected.length < playerCount && <Button type='Button-rng' text='RNG' handleClick={() => handleRNG()} />}
       {alreadySelected.length === playerCount && <Button type='Button-rng' text='Main Screen' handleClick={() => handleRoundEnd()} />}
     </div>
