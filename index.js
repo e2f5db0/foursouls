@@ -14,6 +14,7 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '/build/index.html'))
 })
 
-process.on('uncaughtException', (reason, p) => {
-  console.log(console.error(reason, 'Unhandled Rejection at Promise', p))
+const PORT = process.env.PORT || 3001
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`)
 })
