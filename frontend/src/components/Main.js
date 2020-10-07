@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import baseGame from '../resources/basegame.png'
 import expansion from '../resources/expansion.png'
 import goldBoxEdition from '../resources/goldboxedition.png'
 import arrowUp from '../resources/arrow-up.png'
@@ -30,6 +31,7 @@ const Main = ({ setBody, playerCount, setPlayerCount }) => {
         </div>
       </div>
       <h4>Choose the edition:</h4>
+      <img className='Edition-selection-img' src={baseGame} alt='Base Game' onClick={() => setBody('baseGame')} />
       <img className='Edition-selection-img' src={goldBoxEdition} alt='Gold Box Edition' onClick={() => setBody('goldBoxEdition')} />
       <img className='Edition-selection-img' src={expansion} alt='Expansion' onClick={() => setBody('expansion')} />
     </div>

@@ -1,19 +1,20 @@
 {
   "files": {
     "main.css": "/static/css/main.91d439a8.chunk.css",
-    "main.js": "/static/js/main.12c9440d.chunk.js",
-    "main.js.map": "/static/js/main.12c9440d.chunk.js.map",
+    "main.js": "/static/js/main.24df33c4.chunk.js",
+    "main.js.map": "/static/js/main.24df33c4.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c8a21426.js",
     "runtime-main.js.map": "/static/js/runtime-main.c8a21426.js.map",
-    "static/js/2.2677228c.chunk.js": "/static/js/2.2677228c.chunk.js",
-    "static/js/2.2677228c.chunk.js.map": "/static/js/2.2677228c.chunk.js.map",
+    "static/js/2.8c36a780.chunk.js": "/static/js/2.8c36a780.chunk.js",
+    "static/js/2.8c36a780.chunk.js.map": "/static/js/2.8c36a780.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.00037b64dc45935554bdd5c4925a6b73.js": "/precache-manifest.00037b64dc45935554bdd5c4925a6b73.js",
+    "precache-manifest.93fcde560005e87e219dbb7e26b9ad28.js": "/precache-manifest.93fcde560005e87e219dbb7e26b9ad28.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.91d439a8.chunk.css.map": "/static/css/main.91d439a8.chunk.css.map",
-    "static/js/2.2677228c.chunk.js.LICENSE.txt": "/static/js/2.2677228c.chunk.js.LICENSE.txt",
+    "static/js/2.8c36a780.chunk.js.LICENSE.txt": "/static/js/2.8c36a780.chunk.js.LICENSE.txt",
     "static/media/apollyon.png": "/static/media/apollyon.fefeeacb.png",
     "static/media/azazel.png": "/static/media/azazel.88c682e4.png",
+    "static/media/basegame.png": "/static/media/basegame.651832dd.png",
     "static/media/bindingofisaacfoursouls.jpg": "/static/media/bindingofisaacfoursouls.b8581a7d.jpg",
     "static/media/bluebaby.png": "/static/media/bluebaby.8003e465.png",
     "static/media/bumbo.png": "/static/media/bumbo.4d248c3e.png",
@@ -21,7 +22,7 @@
     "static/media/darkjudas.png": "/static/media/darkjudas.9eeee586.png",
     "static/media/eden.png": "/static/media/eden.33df312a.png",
     "static/media/eve.png": "/static/media/eve.4f1019db.png",
-    "static/media/expansion.png": "/static/media/expansion.b36332cc.png",
+    "static/media/expansion.png": "/static/media/expansion.3862022a.png",
     "static/media/goldboxedition.png": "/static/media/goldboxedition.32fe4fdb.png",
     "static/media/guppy.png": "/static/media/guppy.e5ee6fca.png",
     "static/media/isaac.png": "/static/media/isaac.88c4dcaa.png",
@@ -38,8 +39,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.c8a21426.js",
-    "static/js/2.2677228c.chunk.js",
+    "static/js/2.8c36a780.chunk.js",
     "static/css/main.91d439a8.chunk.css",
-    "static/js/main.12c9440d.chunk.js"
+    "static/js/main.24df33c4.chunk.js"
   ]
 }

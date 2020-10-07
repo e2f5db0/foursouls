@@ -16,8 +16,9 @@ const SideDrawer = ({ show, toggleDrawer, setBody }) => {
     <nav className={drawerClasses.join(' ')}>
       <ul>
       <li className='Side-Drawer-item' onClick={() => handleSelection('main')}>Main Screen</li>
+      <li className='Side-Drawer-item' onClick={() => handleSelection('baseGame')}>Base Game</li>
         <li className='Side-Drawer-item' onClick={() => handleSelection('goldBoxEdition')}>Gold Box Edition</li>
-        <li className='Side-Drawer-item' onClick={() => handleSelection('expansion')}>Four Souls & Expansion</li>
+        <li className='Side-Drawer-item' onClick={() => handleSelection('expansion')}>Base & Expansions</li>
       </ul>
     </nav>
   )

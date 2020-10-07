@@ -5,6 +5,7 @@ import GoldBoxEdition from './components/GoldBoxEdition'
 import Navbar from './components/Navbar'
 import Main from './components/Main'
 import Expansion from './components/Expansion'
+import BaseGame from './components/BaseGame'
 
 const App = () => {
 
@@ -20,6 +21,8 @@ const App = () => {
 
   views['main'] = <Main setBody={setView} playerCount={playerCount} setPlayerCount={setPlayerCount} />
 
+  views['baseGame'] = <BaseGame playerCount={playerCount} />
+
   views['goldBoxEdition'] = <GoldBoxEdition playerCount={playerCount} />
 
   views['expansion'] = <Expansion playerCount={playerCount} />
@@ -34,6 +37,10 @@ const App = () => {
 
         <Route exact path='/main'>
           {views['main']}
+        </Route>
+
+        <Route exact path='/baseGame'>
+          {views['baseGame']}
         </Route>
 
         <Route exact path='/goldBoxEdition'>

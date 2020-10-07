@@ -24,8 +24,9 @@ const Navbar = ({ setBody }) => {
           <div className='Navbar-items'>
             <ul>
               <li className='Navbar-item' onClick={() => setBody('main')}>Main Screen</li>
+              <li className='Navbar-item' onClick={() => setBody('baseGame')}>Base Game</li>
               <li className='Navbar-item' onClick={() => setBody('goldBoxEdition')}>Gold Box Edition</li>
-              <li className='Navbar-item' onClick={() => setBody('expansion')}>Four Souls & Expansion</li>
+              <li className='Navbar-item' onClick={() => setBody('expansion')}>Base & Expansions</li>
             </ul>
           </div>
         </nav>
