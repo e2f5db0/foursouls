@@ -27,7 +27,7 @@ const BaseExpansion = ({ setBody, playerCount }) => {
 
     let newNumberFound = false
     while (newNumberFound === false) {
-      let card = Math.floor(Math.random() * 14)
+      let card = Math.floor(Math.random() * 15)
       if (!alreadySelected.includes(card)) {
         setPlayerCard(card)
         let newArray = alreadySelected
