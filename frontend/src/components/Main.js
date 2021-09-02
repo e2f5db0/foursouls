@@ -23,7 +23,7 @@ const Main = ({ setBody, playerCount, setPlayerCount }) => {
   return (
     <div className='Container'>
       <div className='Playercount-flex'>
-        <h2>Players: {playerCount}</h2>
+        <h2 className='Player-Count-Title'>Players: {playerCount}</h2>
         <div>
           <img className='Arrow-icon' src={arrowUp} alt='Arrow Up' onClick={() => increasePlayerCount()} />
           <br></br>
