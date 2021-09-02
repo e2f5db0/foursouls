@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.a6b90546.chunk.css",
-    "main.js": "/static/js/main.59de7847.chunk.js",
-    "main.js.map": "/static/js/main.59de7847.chunk.js.map",
+    "main.css": "/static/css/main.4f8dab9f.chunk.css",
+    "main.js": "/static/js/main.c4bb37c2.chunk.js",
+    "main.js.map": "/static/js/main.c4bb37c2.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c8a21426.js",
     "runtime-main.js.map": "/static/js/runtime-main.c8a21426.js.map",
-    "static/js/2.b49184cf.chunk.js": "/static/js/2.b49184cf.chunk.js",
-    "static/js/2.b49184cf.chunk.js.map": "/static/js/2.b49184cf.chunk.js.map",
+    "static/js/2.fde2da9a.chunk.js": "/static/js/2.fde2da9a.chunk.js",
+    "static/js/2.fde2da9a.chunk.js.map": "/static/js/2.fde2da9a.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.0bfa310497914ac2f17272b0fe4be28e.js": "/precache-manifest.0bfa310497914ac2f17272b0fe4be28e.js",
+    "precache-manifest.85e1ca0972424593aadb36af70560364.js": "/precache-manifest.85e1ca0972424593aadb36af70560364.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.a6b90546.chunk.css.map": "/static/css/main.a6b90546.chunk.css.map",
-    "static/js/2.b49184cf.chunk.js.LICENSE.txt": "/static/js/2.b49184cf.chunk.js.LICENSE.txt",
+    "static/css/main.4f8dab9f.chunk.css.map": "/static/css/main.4f8dab9f.chunk.css.map",
+    "static/js/2.fde2da9a.chunk.js.LICENSE.txt": "/static/js/2.fde2da9a.chunk.js.LICENSE.txt",
     "static/media/apollyon.png": "/static/media/apollyon.fefeeacb.png",
     "static/media/azazel.png": "/static/media/azazel.88c682e4.png",
-    "static/media/baseexpansion.png": "/static/media/baseexpansion.378988c4.png",
+    "static/media/baseexpansion.png": "/static/media/baseexpansion.0ad37a06.png",
     "static/media/basegame.png": "/static/media/basegame.651832dd.png",
     "static/media/bindingofisaacfoursouls.jpg": "/static/media/bindingofisaacfoursouls.b8581a7d.jpg",
     "static/media/bluebaby.png": "/static/media/bluebaby.8003e465.png",
@@ -23,8 +23,8 @@
     "static/media/darkjudas.png": "/static/media/darkjudas.9eeee586.png",
     "static/media/eden.png": "/static/media/eden.33df312a.png",
     "static/media/eve.png": "/static/media/eve.4f1019db.png",
-    "static/media/goldboxedition.png": "/static/media/goldboxedition.32fe4fdb.png",
-    "static/media/goldexpansion.png": "/static/media/goldexpansion.c80a00b3.png",
+    "static/media/goldboxedition.png": "/static/media/goldboxedition.e9cda06a.png",
+    "static/media/goldexpansion.png": "/static/media/goldexpansion.d8bb5cae.png",
     "static/media/guppy.png": "/static/media/guppy.e5ee6fca.png",
     "static/media/isaac.png": "/static/media/isaac.88c4dcaa.png",
     "static/media/judas.png": "/static/media/judas.9e14589a.png",
@@ -36,12 +36,13 @@
     "static/media/thekeeper.png": "/static/media/thekeeper.6b2822de.png",
     "static/media/thelost.png": "/static/media/thelost.a40e3e50.png",
     "static/media/App.css": "/static/media/upheavtt.2d6cbf09.ttf",
+    "static/media/whoami.png": "/static/media/whoami.db2678a9.png",
     "static/media/whoreofbabylon.png": "/static/media/whoreofbabylon.caf01eac.png"
   },
   "entrypoints": [
     "static/js/runtime-main.c8a21426.js",
-    "static/js/2.b49184cf.chunk.js",
-    "static/css/main.a6b90546.chunk.css",
-    "static/js/main.59de7847.chunk.js"
+    "static/js/2.fde2da9a.chunk.js",
+    "static/css/main.4f8dab9f.chunk.css",
+    "static/js/main.c4bb37c2.chunk.js"
   ]
 }

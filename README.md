@@ -1,4 +1,4 @@
-# Tietopiiri
+# Binding of Isaac: Four souls (character selection)
 
 **Instructions**
 
