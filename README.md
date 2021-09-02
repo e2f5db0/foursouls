@@ -30,6 +30,8 @@ npm install
 
 **Available scripts**
 
+Inside `/frontend`:
+
 Run in development mode (nodemon)
 
 ```bash
@@ -42,9 +44,20 @@ Run on a server
 npm start
 ```
 
+Inside `/foursouls` (root folder)
+
+Run on a server
+
+```bash
+npm start
+```
+
+An optimized build version will run in the port specified in the `.env`.
+
+
 # Push to Github
 
-Changes made to the frontend have to be built
+Changes made to the frontend have to be built inside `/frontend` folder
 
 ```bash
 npm run build
