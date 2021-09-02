@@ -10,6 +10,7 @@ const CardSelection = ({ setBody, playerCount, edition, cardLimit }) => {
   const [playerCard, setPlayerCard] = useState(-1)
   const [alreadySelected, setAlreadySelected] = useState([])
   const [counter, setCounter] = useState(0)
+  const [showPlayerCard, setShowPlayerCard] = useState(false)
 
   const baseAllowed = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
   const baseExpansionAllowed = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 16, 17, 18]
@@ -25,7 +26,7 @@ const CardSelection = ({ setBody, playerCount, edition, cardLimit }) => {
   }
 
   const handleRNG = () => {
-
+    setShowPlayerCard(false)
     let newNumberFound = false
     while (newNumberFound === false) {
       let card = Math.floor(Math.random() * 19)
@@ -38,6 +39,9 @@ const CardSelection = ({ setBody, playerCount, edition, cardLimit }) => {
         newNumberFound = true
       }
     }
+    setTimeout(() => {
+      setShowPlayerCard(true)
+    }, 250)
   }
 
   const handleRoundEnd = () => {
@@ -49,7 +53,7 @@ const CardSelection = ({ setBody, playerCount, edition, cardLimit }) => {
       <Heading edition={edition} />
       <p className="Card-Count">{alreadySelected.length} / {playerCount}</p>
       {alreadySelected.length === 0 && <img className='Player-Card-Backside' src={whoami} alt='Character card backside' />}
-      <PlayerCard cardNumber={playerCard} />
+      {showPlayerCard && <PlayerCard cardNumber={playerCard} />}
       <Button type='Button-rng' text={alreadySelected.length < playerCount ? 'Random' : 'Main Screen'} handleClick={alreadySelected.length < playerCount ? () => handleRNG() : () => handleRoundEnd()} />
     </div>
   )
