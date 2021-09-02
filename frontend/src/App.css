@@ -96,7 +96,7 @@ html {
   background: gainsboro;
 }
 
-.Button-rng {
+.Button-mainscreen {
   margin-top: .5em;
   width: 300px;
   height: 70px;
@@ -108,7 +108,7 @@ html {
   cursor: pointer;
 }
 
-.Button-rng:hover {
+.Button-mainscreen:hover {
   transform: scale(1.05);
 }
 
@@ -245,11 +245,16 @@ html {
   max-width: 15em;
   animation: twirl-in 1.2s ease-out;
   -webkit-animation: twirl-in 1.2s ease-in-out;
+  cursor: pointer;
 }
 
 .Player-Card-Backside {
   margin-top: 1em;
   max-width: 15em;
+}
+
+.Player-Card-Backside:hover {
+  cursor: pointer;
 }
 
 @-webkit-keyframes twirl-in {

@@ -11,6 +11,7 @@ const CardSelection = ({ setBody, playerCount, edition }) => {
   const [alreadySelected, setAlreadySelected] = useState([])
   const [counter, setCounter] = useState(0)
   const [showPlayerCard, setShowPlayerCard] = useState(false)
+  const [showMainScreenButton, setShowMainScreenButton] = useState(false)
 
   const baseAllowed = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
   const baseExpansionAllowed = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 16, 17, 18]
@@ -42,6 +43,11 @@ const CardSelection = ({ setBody, playerCount, edition }) => {
     setTimeout(() => {
       setShowPlayerCard(true)
     }, 150)
+    if (alreadySelected.length === playerCount) {
+      setTimeout(() => {
+        setShowMainScreenButton(true)
+      }, 1500)
+    }
   }
 
   const handleRoundEnd = () => {
@@ -52,9 +58,9 @@ const CardSelection = ({ setBody, playerCount, edition }) => {
     <div className='Container'>
       <Heading edition={edition} />
       <p className="Card-Count">{alreadySelected.length} / {playerCount}</p>
-      {alreadySelected.length === 0 && <img className='Player-Card-Backside' src={whoami} alt='Character card backside' />}
-      {showPlayerCard && <PlayerCard cardNumber={playerCard} />}
-      <Button type='Button-rng' text={alreadySelected.length < playerCount ? 'Random' : 'Main Screen'} handleClick={alreadySelected.length < playerCount ? () => handleRNG() : () => handleRoundEnd()} />
+      {alreadySelected.length === 0 && <img onClick={() => handleRNG()} className='Player-Card-Backside' src={whoami} alt='Character card backside' />}
+      {showPlayerCard && <PlayerCard cardNumber={playerCard} handleClick={alreadySelected.length < playerCount ? () => handleRNG() : () => 0} />}
+      {alreadySelected.length === playerCount && showMainScreenButton && <Button type='Button-mainscreen' text={'Main Screen'} handleClick={() => handleRoundEnd()} />}
     </div>
   )
 }
