@@ -243,9 +243,8 @@ html {
 .Player-Card {
   margin-top: 1em;
   max-width: 15em;
-  animation: twirl-in 1s ease-out;
-  -webkit-animation: twirl-in 1s ease-in-out;
-  animation-delay: 100ms;
+  animation: twirl-in 1.2s ease-out;
+  -webkit-animation: twirl-in 1.2s ease-in-out;
 }
 
 .Player-Card-Backside {
@@ -257,9 +256,11 @@ html {
   from {
     scale: 0;
     -webkit-transform: scale(0);
+    -webkit-transform-origin: 50 0;
     -webkit-transform: rotate(0deg);
   }
   to {
+    -webkit-transform: scale(1);
     -webkit-transform: rotate(365deg);
   }
 }
