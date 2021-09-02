@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.d0c962a9.chunk.css",
+    "main.css": "/static/css/main.3ca8bef5.chunk.css",
     "main.js": "/static/js/main.c4bb37c2.chunk.js",
     "main.js.map": "/static/js/main.c4bb37c2.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c8a21426.js",
@@ -8,9 +8,9 @@
     "static/js/2.fde2da9a.chunk.js": "/static/js/2.fde2da9a.chunk.js",
     "static/js/2.fde2da9a.chunk.js.map": "/static/js/2.fde2da9a.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.0bdacb079f8e77ac39112ab71e8058e6.js": "/precache-manifest.0bdacb079f8e77ac39112ab71e8058e6.js",
+    "precache-manifest.2a530f42a21f559072cd1ba91e709513.js": "/precache-manifest.2a530f42a21f559072cd1ba91e709513.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.d0c962a9.chunk.css.map": "/static/css/main.d0c962a9.chunk.css.map",
+    "static/css/main.3ca8bef5.chunk.css.map": "/static/css/main.3ca8bef5.chunk.css.map",
     "static/js/2.fde2da9a.chunk.js.LICENSE.txt": "/static/js/2.fde2da9a.chunk.js.LICENSE.txt",
     "static/media/apollyon.png": "/static/media/apollyon.fefeeacb.png",
     "static/media/azazel.png": "/static/media/azazel.88c682e4.png",
@@ -42,7 +42,7 @@
   "entrypoints": [
     "static/js/runtime-main.c8a21426.js",
     "static/js/2.fde2da9a.chunk.js",
-    "static/css/main.d0c962a9.chunk.css",
+    "static/css/main.3ca8bef5.chunk.css",
     "static/js/main.c4bb37c2.chunk.js"
   ]
 }
