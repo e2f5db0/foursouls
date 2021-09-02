@@ -5,7 +5,7 @@ import whoami from '../resources/whoami.png'
 import PlayerCard from './PlayerCard'
 import Heading from './Heading'
 
-const CardSelection = ({ setBody, playerCount, edition, cardLimit }) => {
+const CardSelection = ({ setBody, playerCount, edition }) => {
 
   const [playerCard, setPlayerCard] = useState(-1)
   const [alreadySelected, setAlreadySelected] = useState([])
@@ -41,7 +41,7 @@ const CardSelection = ({ setBody, playerCount, edition, cardLimit }) => {
     }
     setTimeout(() => {
       setShowPlayerCard(true)
-    }, 250)
+    }, 150)
   }
 
   const handleRoundEnd = () => {

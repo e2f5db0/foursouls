@@ -252,14 +252,30 @@ html {
   max-width: 15em;
 }
 
+@-webkit-keyframes twirl-in {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    -webkit-transform-origin: 50 0;
+    -webkit-transform: rotate(-21deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -webkit-transform: rotate(365deg);
+  }
+}
+
 @keyframes twirl-in {
   from {
+    opacity: 0;
     scale: 0;
     -webkit-transform: scale(0);
     -webkit-transform-origin: 50 0;
-    -webkit-transform: rotate(0deg);
+    -webkit-transform: rotate(-21deg);
   }
   to {
+    opacity: 1;
     -webkit-transform: scale(1);
     -webkit-transform: rotate(365deg);
   }
