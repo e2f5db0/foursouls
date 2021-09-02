@@ -56,7 +56,7 @@ const CardSelection = ({ setBody, playerCount, edition }) => {
 
   return (
     <div className='Container'>
-      <Heading edition={edition} />
+      <Heading edition={edition} setBody={setBody} />
       <p className="Card-Count">{alreadySelected.length} / {playerCount}</p>
       {alreadySelected.length === 0 && <img onClick={() => handleRNG()} className='Player-Card-Backside' src={whoami} alt='Character card backside' />}
       {showPlayerCard && <PlayerCard cardNumber={playerCard} handleClick={alreadySelected.length < playerCount ? () => handleRNG() : () => 0} />}
