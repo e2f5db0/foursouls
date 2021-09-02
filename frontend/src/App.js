@@ -1,10 +1,7 @@
 import React, { useState } from 'react'
 import './App.css'
 import { Switch, Route, useHistory } from 'react-router-dom'
-import BaseGame from './components/BaseGame'
-import BaseExpansion from './components/BaseExpansion'
-import GoldBoxEdition from './components/GoldBoxEdition'
-import GoldExpansion from './components/GoldExpansion'
+import CardSelection from './components/CardSelection'
 import Navbar from './components/Navbar'
 import Main from './components/Main'
 
@@ -22,13 +19,13 @@ const App = () => {
 
   views['main'] = <Main setBody={setView} playerCount={playerCount} setPlayerCount={setPlayerCount} />
 
-  views['baseGame'] = <BaseGame setBody={setView} playerCount={playerCount} />
+  views['baseGame'] = <CardSelection setBody={setView} playerCount={playerCount} edition={'baseGame'} />
 
-  views['baseExpansion'] = <BaseExpansion setBody={setView} playerCount={playerCount} />
+  views['baseExpansion'] = <CardSelection setBody={setView} playerCount={playerCount} edition={'baseExpansion'} />
 
-  views['goldBoxEdition'] = <GoldBoxEdition setBody={setView} playerCount={playerCount} />
+  views['goldBoxEdition'] = <CardSelection setBody={setView} playerCount={playerCount} edition={'goldBoxEdition'} />
 
-  views['goldExpansion'] = <GoldExpansion setBody={setView} playerCount={playerCount} />
+  views['goldExpansion'] = <CardSelection setBody={setView} playerCount={playerCount} edition={'goldExpansion'} />
 
   return (
     <div className="App">

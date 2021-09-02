@@ -19,7 +19,7 @@ const Navbar = ({ setBody }) => {
           <div className='Navbar-navigation'>
             <DrawerToggleButton toggleDrawer={toggleDrawer} />
           </div>
-          <img className='Navbar-logo' src={logo} alt='RemoteSocietyNow' onClick={() => setBody('main')} />
+          <img className='Navbar-logo' src={logo} onClick={() => setBody('main')} />
           <div className='Navbar-spacer'></div>
           <div className='Navbar-items'>
             <ul>

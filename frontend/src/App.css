@@ -18,6 +18,9 @@ html {
   margin: auto;
   width: 90%;
   font-size: calc(3px + 2vmin);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .Container-flex {
@@ -102,6 +105,7 @@ html {
   color: #d1ebff;
   font-family: Upheaval;
   font-size: 2rem;
+  cursor: pointer;
 }
 
 .Button-rng:hover {
@@ -214,6 +218,7 @@ html {
   margin-top: .6em;
   width: 51%;
   box-shadow: 2px 2px 2px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 
 .Edition-selection-img:hover {
@@ -221,7 +226,8 @@ html {
 }
 
 .Edition-selection-img-heading {
-  width: 51%;
+  margin-top: .5em;
+  width: 20em;
   box-shadow: 2px 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -236,6 +242,24 @@ html {
 
 .Player-Card {
   margin-top: 1em;
+  max-width: 20em;
+  animation: twirl-in 1s ease-out;
+}
+
+.Player-Card-Backside {
+  margin-top: 1em;
+  width: 20em;
+}
+
+@keyframes twirl-in {
+  from {
+    scale: 0;
+    rotate: 0deg;
+  }
+  to {
+    scale: 1;
+    rotate: 365deg;
+  }
 }
 
 .Playercount-flex {
@@ -243,4 +267,8 @@ html {
   justify-content: space-around;
   align-items: center;
   margin-bottom: .4em;
+}
+
+.Card-Count {
+  font-size: 1.5rem;
 }
