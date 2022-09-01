@@ -51,7 +51,7 @@ html {
 }
 
 .Navbar-item {
-  color: #AF3029;
+  color: gainsboro;
   text-decoration: none;
   display: inline-block;
   padding: 1rem;
@@ -59,7 +59,7 @@ html {
 
 .Navbar-item:hover,
 .Navbar-item:active {
-  color: white;
+  transform: scale(1.1);
   cursor: pointer;
 }
 
